@@ -1,0 +1,531 @@
+/* Variables to reuse in the html*/
+:root {
+	--first: #ffffff;
+	--second: #d5dbe8;
+	--third: #8593af;
+	--fourth: #53607a;
+}
+/* Reset the values for default of the browser*/
+body,
+p,
+a,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+/* Grundstilar */
+body {
+	background: var(--first);
+	overflow-x: hidden;
+	/* font-family: 'Roboto Regular'; */
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+nav{
+	font-family: 'Anton', sans-serif;
+}
+
+nav li a{
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	line-height: 1.5em;
+	padding: 20px;
+}
+.button {
+	background: var(--third);
+	border: 2px solid var(--first);
+	color: var(--first);
+	padding: 6px 12px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+	display: inline-block;
+}
+.button:hover {
+	color: var(--fourth);
+	background: var(--first);
+	text-decoration: none;
+}
+input,
+text-area {
+	background: var(--first);
+	padding: 10px 16px;
+	border-radius: 20px;
+	border: 2px solid #cad4da;
+	color: var(--dark);
+}
+
+/* fonts */
+@font-face {
+	font-family: 'Roboto Regular';
+	/* src: url('assets/fonts/Rubik-Regular.ttf'); */
+	src: url('assets/fonts/Roboto-Regular.ttf');
+}
+h1,
+h2,
+h3,
+h4 {
+	color: var(--third);
+	font-weight: normal;
+}
+p,
+a,
+li {
+	color: var(--third);
+}
+h1 {
+	font-size: 1.2em;
+}
+h2 {
+	font-size: 2.5em;
+	border-left: 12px solid var(--second);
+	padding-left: 5px;
+}
+h3 {
+	font-size: 1.1em;
+}
+h4 {
+	font-size: 1.1em;
+}
+.introduktion {
+	color: var(--third);
+	font-size: 1.1em;
+	padding-bottom: 20px;
+	align-self: center;
+	margin: 0 auto;
+}
+.clear {
+	clear: both;
+}
+/* Mobile Styles */ /*/////////*/
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 10px;
+}
+
+#valkommen {
+	padding: 0 20px 20px 20px;
+}
+.valkommen-text {
+	grid-column: 1/6;
+}
+.valkommen-img {
+	grid-column: 6/13;
+}
+.valkommen-img img {
+	width: 90%;
+	margin-bottom: 10px;
+}
+.valkommen h2 {
+	font-size: 2.2em;
+	margin: 20px 0;
+}
+.valkommen-text a {
+	margin: 20px 0;
+	grid-column: 1/6;
+}
+.valkommen-text h2 {
+	grid-column: 1/13;
+	font-size: 2.2em;
+	color: rgba(255, 0, 0, 0.2);
+	margin: 0 0 20px 0;
+	font-weight: 650;
+}
+.texto {
+	grid-column: 1/13;
+	text-align: center;
+}
+
+.titel {
+	font-size: 1.1em;
+	text-decoration: underline;
+	color: var(--fourth);
+}
+
+h3.introduktion {
+	grid-column: 1/6;
+	text-align: center;
+}
+.introduktion {
+	max-width: 80%;
+	margin: 30px auto;
+	border: 2px dotted var(--second);
+	padding: 15px;
+}
+
+#portfolio {
+	background: var(--first);
+	background-position: bottom;
+	padding: 0 20px;
+}
+ #portfolio h2{
+      color: var(--third);
+   }
+  
+#portfolio h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.button {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.projects {
+	margin-top: 40px;
+}
+.projects a {
+	grid-column: 1/13;
+	margin: 20px 0;
+	display: flex; /*For to add the content aside the images */
+}
+.projects a * {
+	margin: 0 20px;
+	max-width: 40%;
+	align-self: center; /*Take all the contents propieties aligned */
+}
+.projects h4 {
+	color: var(--third);
+}
+
+#skills {
+	padding: 30px 20px;
+	background: var(--fourth);
+}
+ #skills h2{
+      color: var(--second);
+   }
+#skills h3 {
+    color: var(--second);
+   text-align: center;
+	font-size: 1.1em;
+}
+#skills ul {
+	margin: 40px 0;
+}
+#skills li {
+	padding: 10px;
+
+	text-align: center;
+	grid-column: span 6; /*We didn´t defined  "grid-column: 1/4" because we didn't wanted them all the images go from 1 to 4 then we toke up four columns in width and that means that each row is gonna have two images because we have eight co
+   lumns in the whole grid.*/
+}
+#skills img {
+	height: 80px;
+	margin: 10px auto;
+}
+#contact {
+	padding: 30px 20px;
+	background: var(--third);
+}
+#contact p {
+	text-align: center;
+	color: var(--first);
+	margin-bottom: 0;
+}
+/*FORM* START*/
+#kontakt {
+	padding: 30px 20px;
+	background: var(--third);
+}
+#kontakt h2 {
+	color: var(--first);
+	margin-bottom: 0;
+}
+
+#kontakt p {
+	text-align: center;
+	color: var(--first);
+	margin-bottom: 0;
+}
+
+#kontakt form {
+	width: 100%;
+	max-width: 400px;
+	margin: 20px auto;
+	text-align: left;
+}
+#kontakt input,
+#kontakt textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+textarea {
+	height: 40px;
+}
+#kontakt .button {
+	margin-top: 10px;
+}
+label {
+	color: var(--second);
+}
+.form-text {
+	color: var(--first);
+}
+/*FORM END*/
+footer {
+	padding: 30px 20px;
+	background-color: var(--fourth);
+	/* background-image: url(assets/footer_image.png); */
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: top center;
+	color: var(--first);
+}
+footer .copyright {
+	grid-column: 1/9;
+	font-size: 0.8em;
+	color: var(--first);
+	align-self: center;
+}
+footer .social {
+	grid-column: 9/13;
+	display: flex; /*para que esten juntos*/
+	justify-content: flex-end;
+	color: var(--first);
+	align-self: center;
+}
+footer li {
+	margin: 0 6px;
+}
+footer img {
+	width: 40px;
+}
+
+/*////////////////////// Small tablet styles //////////////////////////////*/
+@media screen and (min-width: 620px) {
+	.valkommen-text {
+		grid-column: 1/6;
+		align-self: center;
+	}
+	.valkommen-img {
+		grid-column: 6/13;
+	}
+	.valkommen-img img {
+		width: 100%;
+	}
+
+	.bild {
+		width: 60%;
+		float: left;
+		margin: 0 auto;
+		margin-right: 10px;
+	}
+	.introduktion {
+		max-width: 80%;
+		margin-top: 50px;
+		border: 2px dotted var(--second);
+		padding: 15px;
+   }
+  
+	#portfolio h3 {
+		font-size: 1.5em;
+		margin-bottom: 10px;
+		text-align: center; 
+	}
+	.projects {
+		margin-top: 40px;
+	}
+	.projects a {
+		grid-column: span 6; /*halv 12 columns*/
+		display: block;
+		margin: 20px 0;
+	}
+	.projects a:last-child {
+		/*alla childs av projects a*/
+		grid-column: 4/10;
+	}
+	.projects a * {
+		margin: 10px;
+		max-width: 60%;
+		margin: 10px 20%;
+	}
+	.projects h4 {
+		text-align: center;
+   }
+   #portfolio h2{
+      color: var(--third);
+   }
+	skills {
+		padding: 30px 100px;
+   }
+   #skills h2{
+      color: var(--second);
+   }
+   #skills h3 {
+   color: var(--second);
+   text-align: center;
+	font-size: 1.5em;
+}
+	footer {
+		padding: 30px 20px;
+		background-color: var(--fourth);
+		/* background-image: url(assets/footer_image.png); */
+		background-size: 50%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		color: var(--first);
+	}
+	footer .copyright {
+		grid-column: 1/9;
+		font-size: 0.8em;
+		color: var(--first);
+		align-self: center;
+	}
+	footer .social {
+		grid-column: 9/13;
+		display: flex; /*para que esten juntos*/
+		justify-content: flex-end;
+		color: var(--first);
+		align-self: center;
+	}
+	footer li {
+		margin: 0 6px;
+	}
+	footer img {
+		width: 40px;
+	}
+}
+/*////////////////////// Large tablet and Laptops ///////////////////////*/
+@media screen and (min-width: 768px) {
+	footer {
+		background: 20%;
+	}
+	.valkommen-img img {
+		width: 90%;
+		margin-bottom: 10px;
+		margin: 0 auto;
+	}
+	.valkommen-text h2 {
+		grid-column: 1/13;
+		font-size: 3.3em;
+		color: rgba(255, 0, 0, 0.2);
+		margin: 0 0 20px 0;
+	}
+	.titel {
+		font-size: 1.4em;
+		text-decoration: underline;
+		color: var(--fourth);
+	}
+	footer {
+		padding: 30px 20px;
+		background-color: var(--fourth);
+		/* background-image: url(assets/footer_image.png); */
+
+		background-repeat: no-repeat;
+		background-position: top center;
+		color: var(--first);
+	}
+	footer .copyright {
+		grid-column: 1/4;
+		font-size: 0.8em;
+		color: var(--first);
+		align-self: center;
+	}
+	footer .social {
+		grid-column: 10/13;
+		display: flex; /*para que esten juntos*/
+		justify-content: flex-end;
+		color: var(--first);
+		align-self: center;
+	}
+	footer li {
+		margin: 0 6px;
+	}
+	footer img {
+		width: 40px;
+	}
+}
+/*//////////// Desktop Styles /////////////////*/
+@media screen and (min-width: 1280px) {
+
+ 
+	.valkommen-img {
+		grid-column: 6/13;
+	}
+	.valkommen-img img {
+		width: 100%;
+		float: right;
+		margin-bottom: 10px;
+	}
+	.valkommen-text h2 {
+		grid-column: 1/13;
+		font-size: 4em;
+		color: rgba(255, 0, 0, 0.2);
+	}
+
+	.titel {
+		font-size: 1.7em;
+		text-decoration: underline;
+		color: var(--fourth);
+	}
+	.bild {
+		width: 60%;
+		float: left;
+		margin: 0 auto;
+		margin-right: 10px;
+	}
+	.texto h3 {
+		font-size: 2.5em;
+	}
+	#skills {
+		padding: 30px 20px;
+		background: var(--fourth);
+	}
+	#skills h3 {
+		text-align: center;
+		font-size: 1.1em;
+	}
+	#skills ul {
+		margin: 40px 0;
+	}
+	#skills li {
+		padding: 10px;
+
+		text-align: center;
+		grid-column: span 6; /*We didn´t defined  "grid-column: 1/4" because we didn't wanted them all the images go from 1 to 4 then we toke up four columns in width and that means that each row is gonna have two images because we have eight co
+   lumns in the whole grid.*/
+	}
+	#skills img {
+		height: 160px;
+		margin: 10px auto;
+	}
+
+	footer {
+		padding: 30px 20px;
+		background-color: var(--fourth);
+		/* background-image: url(assets/footer_image.png); */
+		background-repeat: no-repeat;
+		background-position: top center;
+		color: var(--first);
+	}
+	footer .copyright {
+		grid-column: 1/4;
+		font-size: 1em;
+		color: var(--first);
+		align-self: center;
+	}
+	footer .social {
+		grid-column: 10/13;
+		display: flex; /*para que esten juntos*/
+		justify-content: flex-end;
+		color: var(--first);
+		align-self: center;
+	}
+	footer li {
+		margin: 0 6px;
+	}
+	footer img {
+		width: 40px;
+	}
+}

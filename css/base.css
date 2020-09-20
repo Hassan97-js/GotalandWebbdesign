@@ -1,0 +1,666 @@
+/* Reuseble Variables the html root element*/
+:root {
+	--first_color: #ffffff;
+	--second_color: #e0e2e6;
+	--third_color: #9ba5ac;
+	--fourth_color: #364a59;
+}
+/* !!! Funkar bara i MAJOR borowsers !!! */
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin-bottom: -136px;
+	display: flex;
+	flex-direction: column;
+}
+
+html,
+body,
+p,
+a,
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/* Grundstilar */
+body {
+	background: var(--first_color);
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+.navbar-brand-custom {
+	font-family: "Anton", sans-serif;
+	font-size: 28px;
+	color: var(--fourth_color) !important;
+}
+
+nav li a {
+	font-family: 'Roboto', sans-serif;
+	color: rgba(0, 0, 0, .9) !important;
+	font-size: large;
+}
+
+nav li a:first-child {
+	margin-left: 13px;
+}
+
+.navbar-nav-custom {
+	text-align: center !important;
+}
+
+p {
+	line-height: 1.5em;
+	padding: 20px 0;
+}
+
+.button {
+	background: var(--fourth_color);
+	border: 2px solid var(--second_color);
+	color: var(--first_color);
+	padding: 6px 12px;
+	border-radius: 20px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.button:hover {
+	color: var(--fourth_color);
+	background: #fafafa;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+input,
+text-area {
+	background: var(--first_color);
+	padding: 10px 16px;
+	border-radius: 20px;
+	border: 2px solid #cad4da;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--fourth_color);
+	font-weight: normal;
+}
+
+p,
+a,
+li {
+	color: var(--first_color);
+}
+
+h1 {
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 2.5em;
+	border-left: 12px solid var(--fourth_color);
+	padding-left: 5px;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+h3.introduktion {
+	grid-column: 1/6;
+	text-align: center;
+	font-size: 1.4em;
+	max-width: 100%;
+	margin: 30px auto;
+	color: var(--fourth_color);
+	padding: 15px;
+	align-self: center;
+	line-height: 1.6em;
+	border: 2px dotted var(--second_color);
+}
+
+header {
+	margin-top: 20px;
+}
+
+#kontakt {
+	margin-bottom: 20px;
+}
+
+#kontakt .introduktion_mail {
+	color: var(--fourth_color);
+	font-size: 1.3em;
+}
+
+/* Mobile Styles */ /*/////////*/
+
+.bild {
+	width: 100%;
+	margin-top: 0;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 10px;
+}
+
+#valkommen {
+	padding: 0 20px 20px 20px;
+}
+
+.valkommen-text {
+	grid-column: 1/6;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.valkommen-img {
+	grid-column: 6/13;
+	text-align: center;
+}
+
+.valkommen-img img {
+	width: 90%;
+	margin-bottom: 10px;
+}
+
+.valkommen-text a {
+	margin: 20px 0;
+	grid-column: 1/6;
+}
+
+.valkommen-text h1 {
+	grid-column: 1/13;
+	font-size: 2em;
+	color: rgba(255, 0, 0, 0.640);
+	margin: 0 0 20px 0;
+	font-weight: bold;
+}
+
+.texto {
+	grid-column: 1/13;
+	text-align: center;
+}
+
+.enphasis {
+	font-size: 1.6em;
+	text-decoration: underline;
+	color: var(--fourth_color);
+}
+
+p.introduktion_oss {
+	color: var(--fourth_color);
+	height: auto;
+	font-size: 1.3em;
+	padding-top: 0;
+}
+
+.huvud h2 {
+	color: var(--fourth_color);
+	border-left: 12px solid var(--fourth_color);
+}
+
+#portfolio {
+	background: var(--second_color);
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+#portfolio h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	text-align: center;
+	color: var(--fourth_color);
+}
+
+.projects a {
+	grid-column: 1/13;
+	margin: 20px 0;
+	display: flex;
+}
+
+.projects a * {
+	margin: 0 20px;
+	max-width: 40%;
+	align-self: center;
+}
+
+#skills {
+	background: var(--fourth_color);
+	padding: 30px 20px;
+}
+
+#skills h2 {
+	color: var(--second_color);
+	border-left: 12px solid var(--second_color);
+	margin-bottom: 10px;
+}
+
+#skills h3 {
+	color: var(--second_color);
+	text-align: center;
+	font-size: 1.4em;
+	border: 0;
+}
+
+#skills ul {
+	margin: 40px 0;
+}
+
+#skills li {
+	padding: 10px;
+	text-align: center;
+	grid-column: span 6;
+}
+
+#skills img {
+	height: 80px;
+	margin: 10px auto;
+	border: 5px solid var(--first_color);
+	border-radius: 5px;
+}
+
+#kontakt p {
+	text-align: center;
+	color: var(--first_color);
+	margin-bottom: 0;
+}
+
+#kontakt {
+	padding: 30px 20px;
+	background: var(--second_color);
+}
+
+#kontakt h2 {
+	color: var(--fourth_color);
+	border-left: 12px solid var(--fourth_color);
+	margin-bottom: 0;
+}
+
+/*FORM START*/
+form label {
+	color: var(--fourth_color);
+	font-size: 1.3em;
+}
+
+form #emailHelp {
+	color: var(--fourth_color);
+}
+
+#kontakt input,
+#kontakt textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+
+#kontakt .button {
+	margin-top: 10px;
+}
+
+form .total-form {
+	max-width: 500px;
+	margin: 20px auto 0 auto;
+	padding: 30px 30px 0 30px;
+	background: #fafafa;
+	border: 2px dotted var(--second_color);
+	border-radius: 20px;
+}
+
+textarea {
+	height: 40px;
+}
+
+.form-text {
+	color: var(--second_color);
+	font-size: 1.2em;
+}
+/*FORM END*/
+
+/* Hitta oss section */
+article h2 {
+	margin-top: 20px;
+}
+
+/* Google maps */
+.google-maps {
+	height: 0;
+	margin-top: 20px;
+	padding-bottom: 75%;
+	position: relative;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* Footer section */
+footer {
+	padding: 30px 20px;
+	background-color: var(--fourth_color);
+	color: var(--first_color);
+}
+
+footer .copyright {
+	grid-column: 1/9;
+	font-size: 1em;
+	color: var(--second_color);
+	align-self: center;
+}
+
+footer .social {
+	grid-column: 9/13;
+	display: flex;
+	justify-content: flex-end;
+	color: var(--first_color);
+	align-self: center;
+}
+
+footer li {
+	margin: 0 6px;
+}
+
+footer img {
+	width: 40px;
+}
+
+footer,
+.push {
+	height: 136px;
+}
+
+/* Footer end */
+
+/* Om oss sida */
+
+.container {
+	padding: 0 1em;
+}
+
+aside.side {
+	margin-bottom: 20px;
+}
+
+.huvud h3 {
+	border-left: 12px solid var(--fourth_color);
+	padding-left: 5px;
+	margin-top: 20px;
+	font-size: 2em;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+aside.side h4 {
+	border-left: 12px solid var(--fourth_color);
+	font-size: 1.8em;
+	text-align: left;
+	margin-bottom: 20px;
+	padding-left: 5px;
+	color: var(--fourth_color);
+}
+
+aside .sidetext {
+	color: var(--fourth_color);
+	font-size: 1.3em;
+}
+
+figure img {
+	width: 100%;
+}
+
+figcaption {
+	font-weight: bold;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+	color: var(--fourth_color);
+}
+
+/*medium mobiles*/ /*///////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 500px) {
+	.valkommen-text h1 {
+		/* Test */
+		font-size: 2.3em;
+	}
+}
+
+/*Small Tablets*/ /*///////////////////////////////////////////////////////*/
+@media screen and (min-width: 620px) {
+	.container p {
+		margin-left: 0;
+	}
+
+	p {
+		font-size: 12px;
+		margin: 0;
+	}
+
+	.bild {
+		margin-right: 20px;
+	}
+
+	figcaption {
+		font-weight: bold;
+		font-size: 1.3em;
+		margin-bottom: .5em;
+		float: left;
+	}
+	.img_aside {
+		width: 100%;
+		height: auto;
+	}
+
+	h3.introduktion {
+		max-width: 80%;
+	}
+
+	.valkommen-text h1 {
+		font-size: 2.5em;
+	}
+
+	#portfolio h3 {
+		font-size: 1.9em;
+	}
+
+	#portfolio h2 {
+		color: var(--fourth_color);
+	}
+
+	.projects {
+		margin-top: 40px;
+	}
+
+	.projects a {
+		grid-column: span 6;
+		display: block;
+		margin: 20px 0;
+	}
+
+	.projects a:last-child {
+		grid-column: 4/10;
+	}
+
+	.projects a * {
+		margin: 10px;
+		max-width: 45%;
+		margin: 10px 27%;
+	}
+
+	footer .social {
+		margin-right: 20px;
+	}
+}
+
+/*Large Tablets and Laptops*/ /*///////////////////////////////////////////////////////*/
+@media screen and (min-width: 768px) {
+	.introduktion {
+		font-size: 1.8em;
+	}
+
+	.valkommen-img img {
+		margin: 0 auto;
+		margin-left: 10px;
+	}
+
+	.valkommen-text h1 {
+		font-size: 3.3em;
+	}
+
+	/* OM OSS SIDA */
+	.container {
+		display: flex;
+	}
+	.huvud {
+		flex: 2;
+	}
+
+	aside.side {
+		flex: 1;
+		background: #e0e2e6;
+		padding: 10px;
+		margin-left: 10px;
+	}
+
+	.bild {
+		max-width: 430px;
+		overflow: hidden;
+		margin: 20px 20px 20px 0px;
+	}
+
+	#skills img {
+		height: 150px;
+		margin: 15px auto;
+		border-radius: 20px;
+	}
+}
+
+/*Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+@media screen and (min-width: 991px) {
+	hr {
+		display: none;
+	}
+}
+
+/*Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+@media screen and (min-width: 1280px) {
+	/* I om oss sida */
+	.bild {
+		max-width: 600px;
+		margin: 30px 25px 20px 0;
+	}
+
+	/* I alla sidor */
+	h3.introduktion {
+		max-width: 70%;
+		font-size: 3.3em;
+		padding: 25px;
+	}
+
+	.valkommen-img img {
+		width: 50%;
+	}
+
+	.valkommen-text h1 {
+		font-size: 3.8em;
+	}
+
+	.valkommen-text h2 {
+		grid-column: 1/13;
+		font-size: 4em;
+	}
+
+	.enphasis {
+		font-size: 1.7em;
+	}
+
+	#portfolio h3 {
+		font-size: 1.8em;
+	}
+	#skills {
+		padding: 30px 20px;
+		background: var(--fourth_color);
+	}
+
+	#skills h3 {
+		color: var(--second_color);
+		text-align: center;
+		padding: 0;
+		border: 0;
+		font-size: 1.8em;
+	}
+
+	.container .introduktion_oss {
+		color: var(--fourth_color);
+		font-size: 1.3em;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	#skills ul {
+		margin: 40px 0;
+	}
+
+	#skills li {
+		padding: 10px;
+		text-align: center;
+		grid-column: span 6;
+	}
+
+	#skills img {
+		width: 100%;
+		height: 300px;
+	}
+
+	.projects a {
+		text-align: center;
+	}
+
+	footer {
+		margin-top: 20px;
+	}
+
+	footer .copyright {
+		grid-column: 6/7;
+		color: var(--first_color);
+		text-align: center;
+	}
+
+	footer .social {
+		grid-column: 7/8;
+		justify-content: center;
+	}
+}
+
+/* Wide Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+@media screen and (min-width: 1945px) {
+	.valkommen-text h1 {
+		font-size: 5em;
+		text-align: center;
+	}
+}
