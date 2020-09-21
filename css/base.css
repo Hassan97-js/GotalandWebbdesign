@@ -142,10 +142,6 @@ header {
 	margin-top: 20px;
 }
 
-#kontakt {
-	margin-bottom: 20px;
-}
-
 #kontakt .introduktion_mail {
 	color: var(--fourth_color);
 	font-size: 1.3em;
@@ -224,7 +220,6 @@ p.introduktion_oss {
 #portfolio {
 	background: var(--second_color);
 	padding: 20px;
-	margin-bottom: 20px;
 }
 
 #portfolio h3 {
@@ -638,10 +633,6 @@ figcaption {
 
 	.projects a {
 		text-align: center;
-	}
-
-	footer {
-		margin-top: 20px;
 	}
 
 	footer .copyright {
