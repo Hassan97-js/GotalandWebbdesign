@@ -599,6 +599,7 @@ figcaption {
 	#skills {
 		padding: 30px 20px;
 		background: var(--fourth_color);
+		margin-bottom: 20px;
 	}
 
 	#skills h3 {
