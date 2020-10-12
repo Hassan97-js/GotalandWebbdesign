@@ -5,6 +5,7 @@
 	--third_color: #9ba5ac;
 	--fourth_color: #364a59;
 }
+
 /* !!! Funkar bara i MAJOR borowsers !!! */
 html {
 	scroll-behavior: smooth;
@@ -38,7 +39,7 @@ li {
 body {
 	background: var(--first_color);
 	overflow-x: hidden;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-size: 12px;
 }
 
@@ -49,8 +50,8 @@ body {
 }
 
 nav li a {
-	font-family: 'Roboto', sans-serif;
-	color: rgba(0, 0, 0, .9) !important;
+	font-family: "Roboto", sans-serif;
+	color: rgba(0, 0, 0, 0.9) !important;
 	font-size: large;
 }
 
@@ -147,7 +148,8 @@ header {
 	font-size: 1.3em;
 }
 
-/* Mobile Styles */ /*/////////*/
+/* Mobile Styles */
+/*/////////*/
 
 .bild {
 	width: 100%;
@@ -189,7 +191,7 @@ header {
 .valkommen-text h1 {
 	grid-column: 1/13;
 	font-size: 2em;
-	color: rgba(255, 0, 0, 0.640);
+	color: rgba(255, 0, 0, 0.64);
 	margin: 0 0 20px 0;
 	font-weight: bold;
 }
@@ -330,6 +332,7 @@ textarea {
 	color: var(--second_color);
 	font-size: 1.2em;
 }
+
 /*FORM END*/
 
 /* Hitta oss section */
@@ -436,7 +439,8 @@ figcaption {
 	color: var(--fourth_color);
 }
 
-/*medium mobiles*/ /*///////////////////////////////////////////////////////*/
+/*medium mobiles*/
+/*///////////////////////////////////////////////////////*/
 
 @media screen and (min-width: 500px) {
 	.valkommen-text h1 {
@@ -444,7 +448,8 @@ figcaption {
 	}
 }
 
-/*Small Tablets*/ /*///////////////////////////////////////////////////////*/
+/*Small Tablets*/
+/*///////////////////////////////////////////////////////*/
 @media screen and (min-width: 620px) {
 	.container p {
 		margin-left: 0;
@@ -462,9 +467,10 @@ figcaption {
 	figcaption {
 		font-weight: bold;
 		font-size: 1.3em;
-		margin-bottom: .5em;
+		margin-bottom: 0.5em;
 		float: left;
 	}
+
 	.img_aside {
 		width: 100%;
 		height: auto;
@@ -511,7 +517,8 @@ figcaption {
 	}
 }
 
-/*Large Tablets and Laptops*/ /*///////////////////////////////////////////////////////*/
+/*Large Tablets and Laptops*/
+/*///////////////////////////////////////////////////////*/
 @media screen and (min-width: 768px) {
 	.introduktion {
 		font-size: 1.8em;
@@ -530,6 +537,7 @@ figcaption {
 	.container {
 		display: flex;
 	}
+
 	.huvud {
 		flex: 2;
 	}
@@ -554,15 +562,18 @@ figcaption {
 	}
 }
 
-/*Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+/*Desktop Styles*/
+/*///////////////////////////////////////////////////////*/
 @media screen and (min-width: 991px) {
 	hr {
 		display: none;
 	}
 }
 
-/*Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+/*Desktop Styles*/
+/*///////////////////////////////////////////////////////*/
 @media screen and (min-width: 1280px) {
+
 	/* I om oss sida */
 	.bild {
 		max-width: 600px;
@@ -596,6 +607,7 @@ figcaption {
 	#portfolio h3 {
 		font-size: 1.8em;
 	}
+
 	#skills {
 		padding: 30px 20px;
 		background: var(--fourth_color);
@@ -648,7 +660,8 @@ figcaption {
 	}
 }
 
-/* Wide Desktop Styles*/ /*///////////////////////////////////////////////////////*/
+/* Wide Desktop Styles*/
+/*///////////////////////////////////////////////////////*/
 @media screen and (min-width: 1945px) {
 	.valkommen-text h1 {
 		font-size: 5em;
